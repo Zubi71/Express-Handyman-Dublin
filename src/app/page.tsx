@@ -8,72 +8,55 @@ import {
   PHONE_DISPLAY,
   PHONE_HREF,
   WHATSAPP_URL,
+  FACEBOOK_URL,
 } from "../components/site-chrome";
 
 const SERVICES = [
   {
     icon: "wrench",
-    title: "General Home Repairs",
-    text: "Prompt resolution for the nagging items on your honey-do list. Restoring comfort, function, and stability.",
-    points: ["Tile repairs & re-grouting", "Hardware & handle replacement", "Loose fixture securing & leveling"],
-  },
-  {
-    icon: "paint",
-    title: "Tiling & Grouting",
-    text: "Expert tiling for kitchens and bathrooms — new tiles, re-grouting and cracked tile replacement, finished to a high standard.",
-    points: ["New floor & wall tiling, kitchens & bathrooms", "Re-grouting, cracked tile replacement & sealing", "Splashbacks, shower enclosures & waterproofing"],
-  },
-  {
-    icon: "brush",
-    title: "Interior & Exterior Painting",
-    text: "Crisp cut lines, premium low-VOC coatings, and meticulous surface prep that transforms rooms and facades.",
-    points: ["Living areas, kitchens & vaulted ceilings", "Exterior trim, shutters & portico accents", "Cabinet repainting & architectural staining"],
-  },
-  {
-    icon: "drop",
-    title: "Plumbing Fixture Repairs",
-    text: "Swift leak resolution, faucet retrofits, and replacement services to stop waste and protect your structure.",
-    points: ["Leaky sink faucets & shower cartridge swap", "Toilet rebuilds, flappers & resets", "Garbage disposal installations & line traps"],
-  },
-  {
-    icon: "bolt",
-    title: "Electrical Updates & Lighting",
-    text: "Safe installation of modern lighting fixtures, ceiling fans, smart home thermostats, and safety receptacles.",
-    points: ["Ceiling fans & chandelier replacements", "GFCI safety outlets & dimmer switches", "Outdoor floodlights & motion sensors"],
-  },
-  {
-    icon: "door",
-    title: "Door & Window Repairs",
-    text: "Re-hanging dragging doors, replacing failed hinges, installing new entry locks, and sealing seasonal drafts.",
-    points: ["Draft stripping & threshold weathersealing", "Deadbolts, smart locks & handlesets", "Sliding screen patio track adjustments"],
+    title: "Handyman",
+    text: "From door repairs and squeaky flooring to TV wall installations and damp sealing, let me be your local handyman. I undertake all work, and no project is too large or small.",
+    points: ["Home upgrades & odd jobs", "Gutter cleaning & pressure washing", "Door hardware & appliance installation", "Furniture assembly"],
   },
   {
     icon: "chair",
-    title: "Furniture & Equipment Assembly",
-    text: "Avoid the headache of endless instructions. Precision assembly and wall anchoring for maximum household safety.",
-    points: ["Complex IKEA, Wayfair & office workstations", "Master bedroom sets, dressers & bunk beds", "Anti-tip safety wall anchoring"],
+    title: "Carpenter",
+    text: "My carpentry services include (but are not limited to) lock adjusting, door panel repairs, skirting board installation, sash window repairs and more. I can help with all types of properties, from new builds to period homes.",
+    points: ["Floors & doors", "Garden sheds & decking", "Fences & shelves", "Kitchen units"],
   },
   {
-    icon: "leaf",
-    title: "Seasonal Home Maintenance",
-    text: "Proactive preventative care to preserve your property value and eliminate costly future structural repairs.",
-    points: ["Gutter flushing & downspout inspection", "Pressure washing driveways & walkways", "Attic insulation & crawlspace barrier checks"],
+    icon: "bolt",
+    title: "Electrician",
+    text: "Whether you’d like me to install a new light fixture or fix an outdoor plug socket, I’ve been working as an electrician for over fifteen years. I’ve seen and done a lot, so you can rest assured that you’ve found the right guy for the job.",
+    points: ["Switches, sockets & transfers", "Light fixture repair & replacement", "Outdoor & garden lights", "Immersion heaters & electric showers"],
   },
   {
-    icon: "floor",
-    title: "Flooring & Tile Repairs",
-    text: "Eliminate tripping hazards and unsightly cracks. Precision repair of ceramic tiles, luxury vinyl plank, and hardwoods.",
-    points: ["Cracked tile removal & color-matched re-grout", "Damaged LVP/LVT board replacement", "Custom metal and wood transition strips"],
+    icon: "drop",
+    title: "Plumber",
+    text: "With my plumbing services, I can help with a range of projects, including kitchen tap replacement, washing machine repairs and replacement, shower tray sealing, and leak repairs. No project is too intricate, so please get in touch to discuss your ideas.",
+    points: ["Sinks, basins & toilet repair", "Drain unblocking & leak fixing", "Plumbing repairs & installation", "Complete bathroom refurbishment"],
+  },
+  {
+    icon: "paint",
+    title: "Painter",
+    text: "Looking to redecorate? I can help to seamlessly repaint any room in your home. Whether you’re looking for a fresh lick of white paint or something more upbeat and colourful, let me help you effectively change your room in no time at all.",
+    points: ["Inside & outside painting", "Doors, windows & kitchen units", "Fences, sheds & wood staining"],
+  },
+  {
+    icon: "brush",
+    title: "Tiler",
+    text: "I can happily lay both floor and wall tiling and can provide the correct materials in order to do so. I can also assist you in choosing the correct tiles for your needs, simply get in touch for more information.",
+    points: ["Kitchen & bathroom tiling", "Shower grouting repair", "Wall & floor tiling", "Mosaic tiles laying"],
   },
 ];
 
 const WORKS = [
-  { img: "/images/portfolio-door.jpg", tag: "Carpentry", cat: "Carpentry", title: "Custom Door & Frame Restoration", text: "Replaced rotted jambs with architectural red oak trim, fitted with satin brass hinges." },
-  { img: "/images/portfolio-crown.jpg", tag: "Carpentry", cat: "Carpentry", title: "Precision Crown Moulding Installation", text: "Seamless compound miter corners spanning 240 linear feet of traditional historic detailing." },
-  { img: "/images/portfolio-drywall.jpg", tag: "Tiling & Paint", cat: "Tiling & Paint", title: "Bathroom Tiling & Grouting", text: "Fresh wall tiling, re-grouting and sealing for a family bathroom — clean lines and a waterproof finish." },
-  { img: "/images/portfolio-vanity.jpg", tag: "Repairs", cat: "Repairs", title: "Modern Bathroom Vanity Update", text: "Replaced a dated double sink vanity, reconfigured P-traps, and mounted matte black faucets." },
-  { img: "/images/portfolio-painting.jpg", tag: "Tiling & Paint", cat: "Tiling & Paint", title: "Living Room Color Transformation", text: "Complete surface preparation, minor crack stabilization, and two coats of washable satin enamel." },
-  { img: "/images/portfolio-deck.jpg", tag: "Carpentry", cat: "Carpentry", title: "Deck & Railing Structural Refurb", text: "Swapped weathered handrails, reinforced support posts, and sealed with deep penetrating stain." },
+  { img: "/images/bathroom-refurb-goatstown.webp", tag: "Bathrooms", cat: "Repairs", title: "Bathroom Refurbishment, Goatstown", text: "Full bathroom refurbishment completed in Goatstown, Dublin." },
+  { img: "/images/cabinets-foxrock.webp", tag: "Carpentry", cat: "Carpentry", title: "Cabinets, Foxrock", text: "Custom cabinets fitted in Foxrock, Dublin." },
+  { img: "/images/kitchen-harolds-cross.webp", tag: "Bath & Kitchen", cat: "Repairs", title: "Kitchen Renovation, Harold's Cross", text: "Kitchen renovation completed in Harold's Cross, Dublin." },
+  { img: "/images/bedroom-ballsbridge.webp", tag: "Bedrooms", cat: "Repairs", title: "Bedroom Renovation, Ballsbridge", text: "Bedroom renovation completed in Ballsbridge, Dublin." },
+  { img: "/images/wallpaper-ranelagh.webp", tag: "Tiling & Paint", cat: "Tiling & Paint", title: "Wallpaper Hanging, Ranelagh", text: "Wallpaper hanging completed in Ranelagh, Dublin." },
+  { img: "/images/entrance-door-sandyford.webp", tag: "Carpentry", cat: "Carpentry", title: "Entrance Door, Sandyford", text: "Wooden entrance door fitted in Sandyford, Dublin." },
 ];
 
 const TESTIMONIALS = [
@@ -98,12 +81,12 @@ const TESTIMONIALS = [
 ];
 
 const WHY = [
-  { title: "Dependable & On-Time", text: "We honor confirmed arrival windows and communicate proactively before we arrive at your door." },
-  { title: "Master Quality Work", text: "High-grade fasteners, durable materials, and true carpentry mastery backing every project." },
-  { title: "Attention to Detail", text: "Boot covers, clean drop cloths, and a full vacuum sweep before we consider a project wrapped." },
-  { title: "Honest Transparent Pricing", text: "Clear upfront written estimates with zero surprise surcharges or hidden travel fees." },
-  { title: "Customer-Focused", text: "We listen intently to your goals and tailor repair strategies to your household budget and timeline." },
-  { title: "Solutions That Last", text: "No quick temporary hacks. We fix the underlying cause so your problem stays solved permanently." },
+  { title: "Punctual & Professional", text: "I have a proven record of high-quality accomplishments and I pride myself on my professionalism. I always aim to be on time for my customers." },
+  { title: "Honest & Dependable", text: "For me, honesty is the only policy and I strive to complete all projects with integrity and fairness, not just with my clients, but also with my suppliers and subcontractors." },
+  { title: "Passionate & Always Improving", text: "I use the best of technology and tools to ensure that all jobs are done quickly, but also give attention to detail and ensure everything is done correctly." },
+  { title: "15+ Years of Experience", text: "Over fifteen years working across Dublin homes — from new builds to period homes — and I only offer high-quality finishes on all of my services." },
+  { title: "No Job Too Small", text: "No project is too large or small — from a single tap to a full bathroom refurbishment. If it needs fixing, call Julian." },
+  { title: "24h Emergency Call-Outs", text: "Weekends and bank holidays — 24-hour emergency call-outs when you need me most." },
 ];
 
 function ServiceIcon({ name }: { name: string }) {
@@ -133,7 +116,7 @@ function ServiceIcon({ name }: { name: string }) {
 export default function Home() {
   const [filter, setFilter] = useState("All Projects");
   const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({ name: "", phone: "", email: "", service: "General Home Repairs", details: "" });
+  const [form, setForm] = useState({ name: "", phone: "", email: "", service: "Handyman", details: "" });
 
   const shownWorks = filter === "All Projects" ? WORKS : WORKS.filter((w) => w.cat === filter);
 
@@ -155,9 +138,9 @@ export default function Home() {
         <section className="hero" id="home" style={{ paddingTop: 84, paddingBottom: 96 }}>
           <div className="container hero-grid">
             <div>
-              <span className="eyebrow light">Dublin&apos;s Home Repair &amp; Handyman Specialist</span>
-              <h1>Reliable Handyman Services You Can Count On</h1>
-              <p className="lead">From small repairs to complete home improvements, we get the job done right the first time. Quality workmanship, dependable service, and no second guessing.</p>
+              <span className="eyebrow light">Your Local Handyman, Whenever You Need One</span>
+              <h1>Your Local Handyman, Whenever You Need One</h1>
+              <p className="lead">I have over fifteen years of experience and only offer high-quality finishes on all of my services.</p>
               <div className="hero-actions">
                 <a className="btn btn-amber" href="#contact">Get a Free Estimate →</a>
                 <a className="btn btn-outline" href="#services">Explore Our Services</a>
@@ -170,9 +153,9 @@ export default function Home() {
             </div>
             <div className="glass dispatch-card">
               <span><span className="live-dot" />Dispatch Active Today</span>
-              <h3 style={{ marginTop: 12 }}>Need Urgent Fixes?</h3>
-              <p>From burst plumbing to broken locks, speak directly to Julian.</p>
-              <span>Direct Technician Line</span>
+              <h3 style={{ marginTop: 12 }}>Need a Handyman Today?</h3>
+              <p>Call Julian on 087 122 3254 — or fill in the contact form for a free quote.</p>
+              <span>Call Julian</span>
               <a className="phone-big" href={PHONE_HREF}>{PHONE_DISPLAY}</a>
               <a className="btn btn-amber" href={PHONE_HREF}>Call Now</a>
               <p className="note">Or <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" style={{ color: "var(--navy-2)", fontWeight: 700 }}>send a WhatsApp</a> — we reply the same day.</p>
@@ -185,8 +168,8 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <span className="eyebrow">What we fix &amp; build</span>
-              <h2>Home Repairs &amp; Improvements Made Easy</h2>
-              <p className="section-sub">One trusted team for all your home maintenance and repair needs across Dublin and the surrounding areas.</p>
+              <h2>What I Can Do For You</h2>
+              <p className="section-sub">Six trades, one call — and no project is too large or small.</p>
             </div>
             <div className="services-grid">
               {SERVICES.map((s) => (
@@ -218,7 +201,7 @@ export default function Home() {
               <a className="btn btn-amber" href="#contact">Book a Carpentry Consultation →</a>
               <p style={{ marginTop: 16, fontSize: "0.88rem" }}>✓ Custom material sourcing available</p>
             </div>
-            <Image src="/images/portfolio-door.jpg" alt="Custom oak entryway door casing and door frame installation" width={640} height={380} />
+            <Image src="/images/entrance-door-dublin.jpg" alt="Wooden entrance door renovation, Dublin" width={640} height={380} />
           </div>
         </section>
 
@@ -226,16 +209,16 @@ export default function Home() {
         <section id="about">
           <div className="container why-grid">
             <div className="why-img-wrap">
-              <Image src="/images/hero-handyman.jpg" alt="Master handyman leveling and fitting a custom architectural door frame" width={640} height={460} />
+              <Image src="/images/julian-portrait.jpg" alt="Julian, Express Handyman Dublin" width={640} height={460} />
               <div className="glass-light why-badge">
-                <strong>Your Neighborhood Craftsmen</strong>
-                <span>Dublin&apos;s trusted local handyman partner</span>
+                <strong>Meet Julian</strong>
+                <span>Your Express Handyman — 15+ years of experience</span>
               </div>
             </div>
             <div>
               <span className="eyebrow">The Express Handyman difference</span>
               <h2>Why Homeowners Choose Express Handyman Dublin</h2>
-              <p className="section-sub" style={{ marginBottom: 0 }}>We eliminate the friction, unreliability, and guesswork common in the contractor industry. Dublin residents turn to us when they need decisive, uncompromising craftsmanship done right the first time.</p>
+              <p className="section-sub" style={{ marginBottom: 0 }}>I know how hard decorating can be when you have a long list of odd jobs that need completing — and that life can sometimes get in the way. This is where I come in.</p>
               <div className="why-list">
                 {WHY.map((w) => (
                   <div className="why-item" key={w.title}>
@@ -251,9 +234,9 @@ export default function Home() {
         {/* Stats */}
         <section className="stats">
           <div className="container stats-grid">
-            <div className="stat"><b>No Job Too Small</b><span>Every job welcome</span></div>
-            <div className="stat"><b>Dublin 22</b><span>Based in Clondalkin</span></div>
-            <div className="stat"><b>9</b><span>Services offered</span></div>
+            <div className="stat"><b>15+</b><span>Years of experience</span></div>
+            <div className="stat"><b>6</b><span>Trades covered</span></div>
+            <div className="stat"><b>Dublin 2–18</b><span>Service areas</span></div>
           </div>
         </section>
 
@@ -292,11 +275,11 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <span className="eyebrow">Portfolio of craftsmanship</span>
-              <h2>Our Work Speaks for Itself</h2>
-              <p className="section-sub">Explore recent home repairs, architectural carpentry, and interior improvements completed right here in Dublin.</p>
+              <h2>Recent Projects</h2>
+              <p className="section-sub">Real jobs, real Dublin homes — take a look at my recent work.</p>
             </div>
             <div className="filters">
-              {["All Projects", "Carpentry", "Tiling & Paint", "Repairs"].map((f) => (
+              {["All Projects", "Carpentry", "Tiling & Paint", "Repairs", "Bathrooms", "Bath & Kitchen", "Bedrooms"].map((f) => (
                 <button key={f} className={`filter-btn ${filter === f ? "active" : ""}`} onClick={() => setFilter(f)}>{f}</button>
               ))}
             </div>
@@ -322,11 +305,23 @@ export default function Home() {
             <div className="section-head">
               <span className="eyebrow">Where we work</span>
               <h2>Proudly Serving Dublin &amp; Surrounding Areas</h2>
-              <p className="section-sub">Based in Clondalkin, Dublin 22 — and happy to work outside Dublin County on larger projects.</p>
+              <p className="section-sub">My service areas are around Dublin — and I&apos;ll be happy to work outside of Dublin County on a large project.</p>
             </div>
-            <div className="areas-grid">
-              {["Clondalkin", "Tallaght", "Lucan", "Blanchardstown", "Swords", "Rathfarnham", "Dún Laoghaire", "Ranelagh", "Dublin City Centre", "Bray", "Naas", "Maynooth"].map((a) => (
-                <span key={a} className="area-chip">{a}</span>
+            <div className="areas-districts">
+              {[
+                { d: "Dublin 2", a: ["Merrion Square", "Trinity College", "Temple Bar", "Grafton Street", "St Stephen's Green", "Dame Street", "Leeson Street", "Grand Canal Dock"] },
+                { d: "Dublin 4", a: ["Ballsbridge", "Donnybrook", "Irishtown", "Merrion", "Ringsend", "Sandymount"] },
+                { d: "Dublin 6", a: ["Milltown", "Ranelagh", "Terenure", "Rathmines", "Dartry", "Rathgar"] },
+                { d: "Dublin 14", a: ["Churchtown", "Clonskeagh", "Dundrum", "Goatstown", "Rathfarnham", "Windy Arbour"] },
+                { d: "Dublin 16", a: ["Ballinteer", "Ballyboden", "Dundrum", "Kilmashogue", "Knocklyon", "Rathfarnham", "Rockbrook"] },
+                { d: "Dublin 18", a: ["Cabinteely", "Carrickmines", "Foxrock", "Kilternan", "Sandyford", "Shankill", "Ticknock", "Ballyedmonduff", "Stepaside", "Leopardstown"] },
+              ].map((g) => (
+                <div key={g.d} className="area-district">
+                  <strong>{g.d}</strong>
+                  <div className="areas-grid">
+                    {g.a.map((a) => (<span key={a} className="area-chip">{a}</span>))}
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -419,6 +414,10 @@ export default function Home() {
                 <div className="info-card">
                   <h3>WhatsApp</h3>
                   <p><a href={WHATSAPP_URL} target="_blank" rel="noreferrer" style={{ color: "var(--navy-2)", fontWeight: 700 }}>Chat with Julian on WhatsApp →</a></p>
+                </div>
+                <div className="info-card">
+                  <h3>Facebook</h3>
+                  <p><a href={FACEBOOK_URL} target="_blank" rel="noreferrer" style={{ color: "var(--navy-2)", fontWeight: 700 }}>Follow Express Handyman Dublin on Facebook →</a></p>
                 </div>
               </div>
             </div>

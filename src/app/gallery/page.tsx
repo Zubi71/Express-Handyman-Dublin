@@ -9,55 +9,58 @@ import {
   CtaBand,
 } from "../../components/site-chrome";
 
-const FILTERS = ["All", "Carpentry", "Tiling & Paint", "Repairs", "Bath & Kitchen", "Outdoor & Decks"];
+const FILTERS = ["All", "Bathrooms", "Kitchens", "Doors", "Bedrooms", "Carpentry", "Tiling & Paint", "Repairs"];
 
 const ITEMS = [
-  { img: "/images/portfolio-door.jpg", cat: "Carpentry", title: "Custom Entry Door Installation", sub: "Solid oak entry, fitted & sealed" },
-  { img: "/images/portfolio-crown.jpg", cat: "Carpentry", title: "Crown Moulding & Built-ins", sub: "Seamless trim work, painted finish" },
-  { img: "/images/portfolio-drywall.jpg", cat: "Tiling & Paint", title: "Bathroom Tiling & Grouting", sub: "Fresh grout, level tiles" },
-  { img: "/images/portfolio-vanity.jpg", cat: "Bath & Kitchen", title: "Bathroom Vanity Upgrade", sub: "Double vanity, marble top" },
-  { img: "/images/portfolio-painting.jpg", cat: "Tiling & Paint", title: "Interior Painting", sub: "Fresh walls, crisp trim lines" },
-  { img: "/images/portfolio-deck.jpg", cat: "Outdoor & Decks", title: "Deck Restoration", sub: "Rebuilt & re-stained" },
-  { img: "/images/svc-carpentry.jpg", cat: "Carpentry", title: "Architectural Trim Work", sub: "Mitered crown moulding, on site" },
-  { img: "/images/svc-drywall.jpg", cat: "Tiling & Paint", title: "Tiling & Grouting", sub: "Fresh grout, level tiles" },
-  { img: "/images/svc-painting.jpg", cat: "Tiling & Paint", title: "Room Painting", sub: "Taped, prepped & cut in clean" },
-  { img: "/images/svc-plumbing.jpg", cat: "Repairs", title: "Faucet Installation", sub: "New kitchen faucet, leak-free" },
-  { img: "/images/svc-electrical.jpg", cat: "Repairs", title: "Ceiling Fan Installation", sub: "Braced, wired & balanced" },
-  { img: "/images/svc-door.jpg", cat: "Repairs", title: "Front Door Fitting", sub: "Hung plumb, sealed & aligned" },
-  { img: "/images/svc-assembly.jpg", cat: "Repairs", title: "Furniture Assembly", sub: "Built, anchored & checked" },
-  { img: "/images/svc-deck.jpg", cat: "Outdoor & Decks", title: "Deck Staining", sub: "Cedar oil, restored finish" },
-  { img: "/images/svc-flooring.jpg", cat: "Tiling & Paint", title: "LVP Flooring", sub: "Luxury vinyl plank install" },
+  { img: "/images/bathroom-refurb-goatstown.webp", cat: "Bathrooms", title: "Bathroom Refurbishment", sub: "Goatstown" },
+  { img: "/images/cabinets-foxrock.webp", cat: "Carpentry", title: "Cabinets", sub: "Foxrock" },
+  { img: "/images/garden-door-harolds-cross.webp", cat: "Doors", title: "Garden Door", sub: "Harold's Cross" },
+  { img: "/images/wallpaper-ranelagh.webp", cat: "Tiling & Paint", title: "Wallpaper Hanging", sub: "Ranelagh" },
+  { img: "/images/shower-limerick.webp", cat: "Bathrooms", title: "Shower Replacement", sub: "Limerick" },
+  { img: "/images/sink-leixlip.webp", cat: "Kitchens", title: "Sink Unit", sub: "Leixlip" },
+  { img: "/images/kitchen-harolds-cross.webp", cat: "Kitchens", title: "Kitchen Renovation", sub: "Harold's Cross" },
+  { img: "/images/entrance-door-sandyford.webp", cat: "Doors", title: "Entrance Door", sub: "Sandyford" },
+  { img: "/images/bathroom-pipes-foxrock.webp", cat: "Bathrooms", title: "Bathroom Boxed Pipes", sub: "Foxrock" },
+  { img: "/images/shower-swords.webp", cat: "Bathrooms", title: "Shower Renovation", sub: "Swords" },
+  { img: "/images/bedroom-ballsbridge.webp", cat: "Bedrooms", title: "Bedroom Renovation", sub: "Ballsbridge" },
+  { img: "/images/rooftop-dun-laoghaire.webp", cat: "Repairs", title: "Rooftop Renovation", sub: "Dun Laoghaire" },
+  { img: "/images/entrance-door-dublin.jpg", cat: "Doors", title: "Wooden Entrance Door Renovation", sub: "Dublin" },
+  { img: "/images/mixer-tap-cabinteely.jpg", cat: "Bathrooms", title: "Bath Shower Mixer Tap", sub: "Cabinteely" },
+  { img: "/images/bathroom-tiling-dublin1.jpg", cat: "Tiling & Paint", title: "Bathroom Tiling", sub: "Dublin 1" },
+  { img: "/images/bedroom-sandycove.jpg", cat: "Bedrooms", title: "Bedroom Renovation", sub: "Sandycove" },
+  { img: "/images/immersion-blackrock.webp", cat: "Repairs", title: "Double Immersion Water Heater Replacement", sub: "Blackrock" },
+  { img: "/images/electrical-dublin1.jpg", cat: "Repairs", title: "Electrical Installation Replacement", sub: "Dublin 1" },
 ];
 
 const SHOWCASE = [
   {
-    title: "Water-Damaged Ceiling Plaster & Trim Restoration",
-    area: "Clondalkin Historic District",
-    time: "2 Days Turnaround",
-    desc: "Cut out saturated gypsum, reinforced compromised sagging joists, applied mildew-resistant backing, executed three-coat Level 5 feathering, and matched 1920s cove crown trim.",
-    badge: "Lifetime Seam Warranted",
+    title: "Bathroom Refurbishment, Goatstown",
+    area: "Goatstown, Dublin",
+    time: "Recent project",
+    desc: "Full bathroom refurbishment completed in Goatstown — new tiling, fixtures and finishes, done to a high standard.",
+    badge: "Finished to a high standard",
   },
   {
-    title: "Eaves & Structural Fascia Rot Mitigation",
-    area: "Tallaght Ridge",
-    time: "1.5 Days Turnaround",
-    desc: "Excavated 38 linear feet of decaying framing lumber. Rebuilt with moisture-impervious cellular PVC boards, vented soffits, and integrated rain-diverting drip flashings.",
-    badge: "Termite & Rot Proof",
+    title: "Kitchen Renovation, Harold's Cross",
+    area: "Harold's Cross, Dublin",
+    time: "Recent project",
+    desc: "Kitchen renovation completed in Harold's Cross — units, tiling and finishing by Julian.",
+    badge: "Finished to a high standard",
   },
   {
-    title: "Custom Floor-to-Ceiling Fireplace Feature",
-    area: "Lucan Waters",
-    time: "3 Days Fabrication & Mount",
-    desc: "Built interior framing, mounted precision-spaced nickel gap shiplap, set custom dark-stained cedar beam mantel, and routed recessed HDMI/power raceways.",
-    badge: "Architectural Grade",
+    title: "Bedroom Renovation, Ballsbridge",
+    area: "Ballsbridge, Dublin",
+    time: "Recent project",
+    desc: "Bedroom renovation completed in Ballsbridge — painting, carpentry and finishing.",
+    badge: "Finished to a high standard",
   },
 ];
 
 const STANDARDS = [
-  { title: "Laser Precision Leveling", desc: "No eyeballing. Digital cross-line leveling for all wall framing, tile assemblies, trim molding, and cabinetry." },
-  { title: "HEPA Clean Site Policy", desc: "Negative-air dust containment, full plastic entryway barriers, and industrial HEPA vacuum sweep before our crew leaves daily." },
-  { title: "Clean Job Site Promise", desc: "Drop cloths, HEPA vacuums, and full daily cleanups. We respect your residence like it is our own." },
-  { title: "Transparent Pricing", desc: "Explicit quotes with no hidden fuel surcharges or surprise billing. You approve every penny before work begins." },
+  { title: "Punctual & Professional", desc: "A proven record of high-quality work. Always aiming to be on time, with projects completed to the highest possible standard." },
+  { title: "Honest & Dependable", desc: "Honesty is the only policy — every project completed with integrity and fairness." },
+  { title: "Passionate & Always Improving", desc: "The best tools and technology, with attention to detail, so every job is done quickly and correctly." },
+  { title: "No Job Too Small", desc: "From a single tap to a full renovation — no project is too large or small." },
 ];
 
 export default function GalleryPage() {
@@ -68,16 +71,16 @@ export default function GalleryPage() {
       <SiteHeader />
       <main>
         <PageHero
-          eyebrow="Dublin Metro Portfolio"
-          title="Our Craftsmanship in Action."
-          sub="Explore authentic transformations, custom trim installations, and structural repairs executed with master precision across Dublin and the surrounding areas."
+          eyebrow="Recent Projects"
+          title="Recent Projects"
+          sub="Real jobs in real Dublin homes — take a look at my recent work."
         />
 
         <section className="section">
           <div className="container">
             <div className="section-head">
-              <span className="eyebrow">Verified Structural Transformations</span>
-              <h2>Featured project showcases</h2>
+              <span className="eyebrow">Recent work</span>
+              <h2>Featured projects</h2>
               <p>Clean trade execution, seamless architectural blends, and meticulous substrate leveling.</p>
             </div>
             <div className="cards-3">
@@ -98,7 +101,7 @@ export default function GalleryPage() {
             <div className="section-head">
               <span className="eyebrow">Recent Commissions Across the Dublin area</span>
               <h2>Project archive</h2>
-              <p>Filter through our completed work. Each job is signed off by a certified local master craftsman.</p>
+              <p>Filter through my completed work across Dublin.</p>
             </div>
             <div className="filters">
               {FILTERS.map((f) => (

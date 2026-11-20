@@ -12,165 +12,96 @@ import {
 export const metadata = {
   title: "Services | Express Handyman Dublin — Dublin, Ireland",
   description:
-    "Carpentry, tiling, painting, plumbing fixtures, electrical, doors, assembly, decks and flooring — one reliable handyman in Dublin, Ireland. Free estimates.",
+    "Handyman, carpenter, electrician, plumber, painter and tiler — one local handyman with over 15 years of experience in Dublin, Ireland. Free estimates.",
 };
 
 const SERVICES = [
   {
-    id: "carpentry",
-    cat: "Carpentry",
-    title: "Custom Carpentry, Crown Moulding & Built-ins",
-    desc: "Upgrade interior aesthetics with crisp mitered corners, custom shelving alcoves, board-and-batten accent walls, and custom baseboards crafted with laser-level precision.",
-    img: "/images/svc-carpentry.jpg",
-    alt: "Carpenter cutting crown moulding on a miter saw",
-    points: [
-      "Crown moulding, casing, wainscoting & baseboards",
-      "Custom pantry shelving & mudroom bench units",
-      "Precision caulking, wood-filling, and sanding prep",
-    ],
-    time: "Typical: 1–2 Days",
-    price: "Fixed Project Quote",
+    id: "handyman",
+    cat: "Handyman",
+    title: "Handyman — Home Upgrades & Odd Jobs",
+    desc: "From door repairs and squeaky flooring to TV wall installations and damp sealing, let me be your local handyman. I undertake all work, and no project is too large or small.",
+    img: "/images/trade-handyman.jpg",
+    alt: "Julian at work on a home repair job",
+    points: ["Home upgrades", "Gutter cleaning", "Pressure washing", "General garden maintenance", "Door hardware installation", "Appliance installation", "Furniture assembly"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
   {
-    id: "tiling",
-    cat: "Tiling",
-    title: "Tiling, Re-grouting & Splashbacks",
-    desc: "Expert tiling for kitchens and bathrooms — new tiles, re-grouting, cracked tile replacement and waterproof splashbacks, finished to a high standard.",
-    img: "/images/svc-drywall.jpg",
-    alt: "Handyman laying bathroom wall tiles",
-    points: [
-      "New floor & wall tiling, kitchens & bathrooms",
-      "Re-grouting, cracked tile replacement & sealing",
-      "Splashbacks, shower enclosures & waterproofing",
-    ],
-    time: "Typical: 3–6 Hours",
-    price: "Standard Flat Rates",
+    id: "carpenter",
+    cat: "Carpenter",
+    title: "Carpenter — Floors, Doors & Kitchen Units",
+    desc: "My carpentry services include (but are not limited to) lock adjusting, door panel repairs, skirting board installation, sash window repairs and more. I can help with all types of properties, from new builds to period homes.",
+    img: "/images/trade-carpenter.jpg",
+    alt: "Carpentry work by Julian",
+    points: ["Floors", "Doors", "Garden sheds", "Decking", "Fences", "Shelves", "Kitchen units"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
   {
-    id: "painting",
-    cat: "Painting",
-    title: "Interior & Exterior Painting • Low-VOC Precision",
-    desc: "Comprehensive prep work is our trademark: scraping, caulking, priming, and hand-rolled finishes that will not peel, streak, or bleed over edges.",
-    img: "/images/svc-painting.jpg",
-    alt: "Painter cutting in a freshly painted slate blue wall",
-    points: [
-      "Full surface deglossing, power washing & hole filling",
-      "Clean razor edge tape lines & non-bleeding sealants",
-      "Premium Sherwin-Williams / Benjamin Moore finishes",
-    ],
-    time: "Typical: 1–3 Days",
-    price: "Room or SqFt Pricing",
+    id: "electrician",
+    cat: "Electrician",
+    title: "Electrician — Lights, Sockets & Showers",
+    desc: "Whether you’d like me to install a new light fixture or fix an outdoor plug socket, I’ve been working as an electrician for over fifteen years. I’ve seen and done a lot, so you can rest assured that you’ve found the right guy for the job.",
+    img: "/images/trade-electrician.jpg",
+    alt: "Electrical work by Julian",
+    points: ["Switches, sockets and transfers installation", "Light fixture repair and replacement", "Preparing new light points", "Outdoor and garden lights", "Immersion heater elements", "Electric showers"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
   {
-    id: "plumbing",
-    cat: "Plumbing",
-    title: "Plumbing Fixture Repairs & Upgrades",
-    desc: "Fast, watertight replacements of malfunctioning sink faucets, running toilets, garbage disposals, shower valves, and supply shutoff gate valves.",
-    img: "/images/svc-plumbing.jpg",
-    alt: "Plumber installing a kitchen faucet under the sink",
-    points: [
-      "Old fixture disconnection, haul away & disposal",
-      "Quarter-turn emergency shut-off valve replacements",
-      "Pressure check & zero-drip dynamic testing",
-    ],
-    time: "Typical: 1–3 Hours",
-    price: "Flat Rate Tiered",
+    id: "plumber",
+    cat: "Plumber",
+    title: "Plumber — Taps, Toilets & Bathrooms",
+    desc: "With my plumbing services, I can help with a range of projects, including kitchen tap replacement, washing machine repairs and replacement, shower tray sealing, and leak repairs. No project is too intricate, so please get in touch to discuss your ideas.",
+    img: "/images/trade-plumber.jpg",
+    alt: "Plumbing work by Julian",
+    points: ["Sinks and basins fitting and replacement", "Drain unblocking", "Toilet repair and installation", "Leaks fixing", "Plumbing repairs and installation", "Complete bathroom refurbishment"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
   {
-    id: "electrical",
-    cat: "Electrical",
-    title: "Electrical Updates, Fans, Dimmers & Safety Outlets",
-    desc: "Secure installations of heavy ceiling fans, modern LED recessed can conversions, GFCI wet-location outlets, and smart video doorbells.",
-    img: "/images/svc-electrical.jpg",
-    alt: "Electrician installing a ceiling fan",
-    points: [
-      "Heavy-duty ceiling fan brace retrofitting",
-      "Kitchen/Bath GFCI shock-protection upgrades",
-      "Smart dimmer, timer switches & ring cameras",
-    ],
-    time: "Typical: 2–4 Hours",
-    price: "Standard Pricing Menu",
+    id: "painter",
+    cat: "Painter",
+    title: "Painter — Inside & Outside Painting",
+    desc: "Looking to redecorate? I can help to seamlessly repaint any room in your home. Whether you’re looking for a fresh lick of white paint or something more upbeat and colourful, let me help you effectively change your room in no time at all.",
+    img: "/images/trade-painter.jpg",
+    alt: "Painting work by Julian",
+    points: ["Inside and outside painting", "Doors and windows painting", "Kitchen units", "Fences and sheds", "Wood staining and finishing"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
   {
-    id: "doors",
-    cat: "Entryways",
-    title: "Door, Lockset & Window Weatherization",
-    desc: "Fix sticking doors, loose threshold draft seals, damaged screen mesh, sagging pocket doors, and rekey or install smart security electronic deadbolts.",
-    img: "/images/svc-door.jpg",
-    alt: "Handyman fitting a craftsman front door",
-    points: [
-      "Interior / Exterior door hung plumb and square",
-      "Heavy duty weatherstripping & sweep replacements",
-      "Smart lock alignment, strike mortising & latch tuning",
-    ],
-    time: "Typical: 2–5 Hours",
-    price: "Standard Per-Door Rate",
-  },
-  {
-    id: "assembly",
-    cat: "Assembly",
-    title: "Furniture & Equipment Assembly • IKEA & Gym Setup",
-    desc: "Avoid hundreds of confusing manual pages. We assemble complex modular systems, home gym equipment, gazebos, kids play sets, and heavy cabinetry.",
-    img: "/images/svc-assembly.jpg",
-    alt: "Technician assembling a wooden dresser",
-    points: [
-      "Unboxing, parts verification, and packaging disposal",
-      "Wall-anchoring for bookshelves & dressers",
-      "Torque adjustment & stability safety check",
-    ],
-    time: "Typical: 2–6 Hours",
-    price: "Hourly or Box Rate",
-  },
-  {
-    id: "exterior",
-    cat: "Exterior Living",
-    title: "Deck, Porch & Fence Wood Restoration",
-    desc: "Alabama heat and moisture deteriorate outdoor timber rapidly. We replace rotted boards, reinforce loose railings, deep clean, and seal decks to last years.",
-    img: "/images/svc-deck.jpg",
-    alt: "Restored wooden deck, half stained cedar",
-    points: [
-      "Rotted board replacement with pressure-treated wood",
-      "Structural lag screw tightening & handrail stability",
-      "Deep cleaning wash & waterproof penetrating stain",
-    ],
-    time: "Typical: 1–3 Days",
-    price: "Square Foot Package",
-  },
-  {
-    id: "flooring",
-    cat: "Flooring & Tile",
-    title: "Flooring, LVP & Tile Grout Restoration",
-    desc: "Repair cracked ceramic tiles, recaulk mildewed tub and shower seams, replace squeaking subfloor patches, or install waterproof Luxury Vinyl Plank (LVP).",
-    img: "/images/svc-flooring.jpg",
-    alt: "Tradesman installing luxury vinyl plank flooring",
-    points: [
-      "Single-tile extractions and color-matched regrouting",
-      "100% silicone mold-resistant shower re-caulking",
-      "T-molding, threshold transitions & quarter-round shoe",
-    ],
-    time: "Typical: 1–2 Days",
-    price: "Custom Scope Quote",
+    id: "tiler",
+    cat: "Tiler",
+    title: "Tiler — Kitchens, Bathrooms & Mosaics",
+    desc: "I can happily lay both floor and wall tiling and can provide the correct materials in order to do so. I can also assist you in choosing the correct tiles for your needs, simply get in touch for more information.",
+    img: "/images/trade-tiler.jpg",
+    alt: "Tiling work by Julian",
+    points: ["Kitchen and bathrooms tiling", "Showers grouting repair", "Wall tiling", "Floor tiling", "Mosaic tiles laying", "Filling of gaps, cracks and holes in floors and walls"],
+    time: "Free estimate",
+    price: "Competitive prices",
   },
 ];
 
 const PRICING = [
   {
-    title: "Flat-Rate Projects",
-    sub: "Ideal for well-defined installations and single-item repair scopes.",
-    points: ["Faucets, disposals & toilet replacements", "Ceiling fans, light fixtures & video doorbells", "Tile repairs & re-grouting", "Pre-hung door replacements & locksets"],
-    note: "Guaranteed cost cap. If the installation takes us an extra hour due to stubborn fittings, your price never increases.",
+    title: "Free Quotes",
+    sub: "Call Julian on 087 122 3254 or fill in the contact form for a free quote.",
+    points: ["No obligation to proceed", "Firm quote before work starts", "Free estimate via phone photos"],
+    note: "Estimates are 100% complimentary.",
   },
   {
-    title: "Punch List & Half-Day Passes",
-    sub: 'Most popular for "punch lists" — 5–15 small odd repairs around the house.',
-    points: ["4-Hour Half-Day Handyman Block", "8-Hour Full-Day Comprehensive Overhaul", "Tackle doors, trim, hanging, patch & paint in one visit", "Fully equipped van with all common fasteners & tools"],
-    note: "We knock through your punch list rapidly. No supply run delays — pure productivity.",
+    title: "Competitive Prices",
+    sub: "I’ll never overcharge you for a project, and I always aim to keep my prices competitive.",
+    points: ["Honest, upfront pricing", "No hidden charges", "Best deal on the market"],
+    note: "Integrity and fairness — with clients, suppliers and subcontractors.",
   },
   {
-    title: "Itemized Written Quotes",
-    sub: "For carpentry builds, full-room renovations, or multi-surface repainting.",
-    points: ["Material cost transparency with trade receipts", "Clear milestone schedule and estimated completion day", "Free virtual estimate via phone photos", "Zero obligation to proceed after receiving written bid"],
-    note: "We never collect final payment until you personally sign off on the craftsmanship walk-through.",
+    title: "No Job Too Small",
+    sub: "From a single tap to a full bathroom refurbishment — no project is too large or small.",
+    points: ["Small repairs welcome", "Large projects welcome", "One call covers six trades"],
+    note: "If it needs fixing, call Julian.",
   },
 ];
 
@@ -182,7 +113,7 @@ export default function ServicesPage() {
         <PageHero
           eyebrow="Dublin & Surrounding Areas Field Directory • Dublin, Ireland"
           title="Comprehensive Home Repairs & Maintenance Services"
-          sub="One reliable crew for all residential trade projects. Master-level carpentry, prompt fixture swaps, clean tiling and finishing, and architectural repairs delivered with guaranteed flat rates."
+          sub="One local handyman for all residential trade projects — carpentry, plumbing, tiling, painting and electrical, delivered with competitive prices."
         />
 
         <section className="stats-band">
@@ -192,16 +123,16 @@ export default function ServicesPage() {
               <span className="stat-label">From happy Dublin homeowners</span>
             </div>
             <div className="stat">
-              <span className="stat-num">9</span>
-              <span className="stat-label">Service categories</span>
+              <span className="stat-num">6</span>
+              <span className="stat-label">Trades covered</span>
             </div>
             <div className="stat">
               <span className="stat-num">Free</span>
               <span className="stat-label">Estimates — no obligation</span>
             </div>
             <div className="stat">
-              <span className="stat-num">1 crew</span>
-              <span className="stat-label">No rushed subcontractors</span>
+              <span className="stat-num">15+</span>
+              <span className="stat-label">Years of experience</span>
             </div>
           </div>
         </section>
@@ -210,7 +141,7 @@ export default function ServicesPage() {
           <div className="container">
             <div className="section-head">
               <span className="eyebrow">Standard Trade &amp; Repair Capabilities</span>
-              <h2>Every project, handled by a licensed, tool-prepared crew</h2>
+              <h2>Every project, handled by an experienced, tool-prepared handyman</h2>
               <p>No rushed subcontractors, no lingering messes, and clean daily wrap-ups.</p>
             </div>
             <div className="detail-grid">
@@ -272,8 +203,7 @@ export default function ServicesPage() {
               <span className="eyebrow">Uncertain about your repair scope?</span>
               <h2>Schedule an on-site consultation</h2>
               <p>
-                Have a custom remodeling idea or multiple repairs throughout your Dublin property? A master
-                tradesman will walk through your home and draft an itemized plan.
+                Have a custom idea or multiple repairs throughout your Dublin home? Julian will walk through your home and draft a plan with you.
               </p>
             </div>
             <div className="hero-actions center">
@@ -289,7 +219,7 @@ export default function ServicesPage() {
 
         <CtaBand
           title="Experience stress-free home repairs today"
-          sub="Stop putting off home maintenance. Get a precise, zero-obligation estimate from Dublin's most dependable handyman team."
+          sub="Stop putting off home maintenance. Get a free, zero-obligation estimate from Dublin's dependable handyman."
         />
       </main>
       <SiteFooter />

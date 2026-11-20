@@ -17,16 +17,14 @@ const REVIEWS = [
     area: "Dublin",
     date: "Happy client",
     service: "Tap Replacement & Larder Repair",
-    text: "I have nothing but great things to say about our new handyman — he has done 6 jobs for us so far, from replacing a tap to taking apart and fixing our pull-out larder. He can do anything and whatever he does is done to a very high standard. He is polite, reliable, extremely hard working and very professional. I honestly couldn't recommend him more highly.",
-    reply: "Thanks so much, Mide — happy to help anytime! — Julian",
+    text: "I have nothing but great things to say about our new handyman — he has done 6 jobs for us so far, from replacing a tap to taking apart and fixing our pull-out larder. He can do anything and whatever he does is done to a very high standard. He is polite, reliable, extremely hard working and very professional. It is great to know I can call him when electrics, plumbing, carpentry or gardening skills are needed. I honestly couldn't recommend him more highly.",
   },
   {
-    name: "Valerie O'Connor",
+    name: "Carol Byrne",
     area: "Dublin",
     date: "Happy client",
-    service: "Plumbing Repair",
-    text: "Called over quickly, had a backup part (to replace the new one we had bought and didn't fit), job done no problem. That guy knows his job — we'll call him again!",
-    reply: "Thanks Valerie — glad it was a quick fix! — Julian",
+    service: "General Home Repairs",
+    text: "Absolutely fantastic! So quick, efficient and went above and beyond to do a good job. Cannot recommend enough! Called only the day before and he made it so easy and stress-free! Really fantastic! Highly recommend",
   },
   {
     name: "Antoinette Treacy",
@@ -34,14 +32,69 @@ const REVIEWS = [
     date: "Happy client",
     service: "General Home Repairs",
     text: "I was very impressed with Julian. Did all the jobs required and v. good price. Will definitely recommend him and will certainly get him to do any other jobs I may need. Thank you, Antoinette.",
-    reply: "Thank you, Antoinette — any time you need me, just call! — Julian",
+  },
+  {
+    name: "Louise Dupuis",
+    area: "Foxrock, Dublin",
+    date: "Happy client",
+    service: "Pocket Door, Painting & Table Restoration",
+    text: "Julian's dedication to his work and clients is outstanding. He's done a few jobs around the house: pocket door repaired, walls painted, large table top sanded and finished with polyurethane. Julian protects the working area very well and leaves no mess when he is finished. I recommend Julian to all my friends now as it's tough to find a good and reliable handyman in Dublin.",
+  },
+  {
+    name: "Matin Wafa",
+    area: "Dublin",
+    date: "Happy client",
+    service: "General Home Repairs",
+    text: "Julian did a very good job for me. He has a great personality too. I will recommend him and his work to anyone.",
+  },
+  {
+    name: "Mairead O'Sullivan",
+    area: "Dublin",
+    date: "Happy client",
+    service: "Gate Hanging",
+    text: "Julian did great work hanging gates for me today. He was both very courteous and very efficient. I contacted him based on reviews, and he was true to form. I will be passing on his details to family and friends. Thank you once again, Julian.",
+  },
+  {
+    name: "Ciara Smyth",
+    area: "Dublin",
+    date: "Happy client",
+    service: "Painting, Decorating & Carpentry",
+    text: "Highly recommend Julian to anyone looking for an outstanding painter, decorator, carpenter etc. He is incredibly reliable, high quality, communicative and dependable. He’s also a super guy and hard-working.",
+  },
+  {
+    name: "Claire O’Hanlon",
+    area: "Dublin",
+    date: "Happy client",
+    service: "Showers, Appliances & Wall Mounting",
+    text: "I enlist Julian’s help whenever I need anything done around the house. Blocked showers, broken washing machines, dishwashers and door knobs, pictures, shelves, mirrors, and televisions that need hanging, blinds put up, etc. You name it, he does it. His work is of a very high standard, and I don’t say that lightly. I have been getting Julien as a handyman for four years now. I text him, and he’s over promptly. No job is too big, and I am genuinely delighted I eventually found someone as professional and reliable as he is at all these jobs. He’s a perfectionist when it comes to mirrors and shelves.",
+  },
+  {
+    name: "Jennifer Byrne",
+    area: "Dublin",
+    date: "Happy client",
+    service: "General Home Repairs",
+    text: "The Express Handyman is 2nd to none. Quality of the work is top notch, and no job is too big or small. I will be a lifelong customer for sure.! Thank you so much, Julian and Felix!",
+  },
+  {
+    name: "Valerie O'Connor",
+    area: "Dublin",
+    date: "Happy client",
+    service: "Plumbing Repair",
+    text: "Called over quickly, had a backup part (to replace the new one we had bought and didn't fit), job done no problem. That guy knows his job — we'll call him again!",
+  },
+  {
+    name: "Patricia Mortell",
+    area: "Dublin",
+    date: "Happy client",
+    service: "General Home Repairs",
+    text: "Julian was extremely professional and his work was outstanding. Would highly recommend him. Lovely person to deal with. I will be using his services in the future.",
   },
 ];
 
 const BACKED = [
-  { img: "/images/rev-bookshelves.jpg", title: "Custom White Oak Built-In Library", area: "Clondalkin Historic District" },
-  { img: "/images/rev-ceiling.jpg", title: "Seamless Ceiling Restoration & Texture Blend", area: "Rathfarnham Estates" },
-  { img: "/images/rev-deck.jpg", title: "Structural Cedar Staircase Rebuild", area: "Lucan Country Home" },
+  { img: "/images/bathroom-refurb-goatstown.webp", title: "Bathroom Refurbishment", area: "Goatstown" },
+  { img: "/images/kitchen-harolds-cross.webp", title: "Kitchen Renovation", area: "Harold's Cross" },
+  { img: "/images/cabinets-foxrock.webp", title: "Cabinets", area: "Foxrock" },
 ];
 
 export default function ReviewsPage() {
@@ -83,7 +136,7 @@ export default function ReviewsPage() {
             <div className="section-head">
               <span className="eyebrow">What Dublin homeowners say</span>
               <h2>Verified client reviews</h2>
-              <p>Real reviews from Julian&apos;s clients, with a reply from Julian on each one.</p>
+              <p>Real reviews from Julian&apos;s clients — in their own words.</p>
             </div>
             <div className="review-grid">
               {REVIEWS.map((r) => (
@@ -98,10 +151,6 @@ export default function ReviewsPage() {
                   </div>
                   <span className="work-cat">{r.service}</span>
                   <p>&ldquo;{r.text}&rdquo;</p>
-                  <div className="owner-reply">
-                    <strong>Owner response</strong>
-                    <p>&ldquo;{r.reply}&rdquo;</p>
-                  </div>
                 </article>
               ))}
             </div>
@@ -121,7 +170,7 @@ export default function ReviewsPage() {
                   <div className="work-body">
                     <span className="work-cat">{b.area}</span>
                     <h3>{b.title}</h3>
-                    <p>Verified project</p>
+                    <p>Recent project</p>
                   </div>
                 </article>
               ))}
@@ -166,11 +215,12 @@ export default function ReviewsPage() {
                   <label>
                     Project Category
                     <select name="project">
-                      <option>Architectural Trim &amp; Carpentry</option>
-                      <option>Tiling &amp; Interior Painting</option>
-                      <option>Plumbing &amp; Leak Repair</option>
-                      <option>Exterior Doors &amp; Decking</option>
-                      <option>General Handyman Tasks</option>
+                      <option>Handyman</option>
+                      <option>Carpenter</option>
+                      <option>Electrician</option>
+                      <option>Plumber</option>
+                      <option>Painter</option>
+                      <option>Tiler</option>
                     </select>
                   </label>
                   <label>
@@ -198,8 +248,8 @@ export default function ReviewsPage() {
         </section>
 
         <CtaBand
-          title="Ready to experience 5-star handyman service?"
-          sub="Put Dublin's top-rated trade team to work. Send us your project list or emergency repair request today for a prompt, flat-rate quote."
+          title="Ready to get your jobs done?"
+          sub="Call Julian on 087 122 3254 or send your project list on WhatsApp for a free quote."
         />
       </main>
       <SiteFooter />

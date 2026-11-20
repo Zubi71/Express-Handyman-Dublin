@@ -5,12 +5,12 @@ import { MobileCtaBar } from "../components/site-chrome";
 export const metadata: Metadata = {
   title: "Express Handyman Dublin | Handyman in Dublin, Ireland",
   description:
-    "Express Handyman Dublin — Julian, your local handyman in Clondalkin, Dublin 22. Carpentry, plumbing, tiling, painting & home repairs across Dublin. No job too small. Call 087 122 3254 for a free quote.",
-  icons: { icon: "/logo.svg" },
+    "Express Handyman Dublin — Julian, your local handyman in Clondalkin, Dublin 22. Over fifteen years of experience — handyman, carpenter, electrician, plumber, painter and tiler across Dublin. No job too small. Call 087 122 3254 for a free quote.",
+  icons: { icon: "/images/logo-real.png" },
   openGraph: {
     title: "Express Handyman Dublin | Handyman in Dublin, Ireland",
     description:
-      "Your local handyman in Dublin — carpentry, plumbing, tiling & painting. No job too small. Call 087 122 3254 for a free quote.",
+      "Your local handyman in Dublin — over fifteen years of experience, six trades, no job too small. Call 087 122 3254 for a free quote.",
     type: "website",
   },
 };

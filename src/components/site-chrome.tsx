@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export const PHONE_DISPLAY = "087 122 3254";
 export const WHATSAPP_URL = "https://wa.me/353871223254";
+export const FACEBOOK_URL = "https://www.facebook.com/expresshandymandublin.ie";
 export const PHONE_HREF = "tel:+353871223254";
 
 export const NAV_LINKS = [
@@ -23,7 +24,7 @@ export function SiteHeader() {
       <div className="topbar">
         <div className="container">
           <span>
-            Serving <strong>Dublin</strong> &amp; surrounding areas
+            Serving <strong>Dublin</strong> &amp; surrounding areas · 24h emergency call-outs on weekends &amp; bank holidays
           </span>
           <span>
             Call or text: <strong>{PHONE_DISPLAY}</strong>
@@ -33,7 +34,7 @@ export function SiteHeader() {
       <header className="site-header">
         <div className="container header-inner">
           <a className="brand" href="/">
-            <Image src="/logo.svg" alt="Express Handyman Dublin logo" width={48} height={48} />
+            <Image src="/images/logo-real.png" alt="Express Handyman Dublin logo" width={48} height={48} style={{ background: "#00162e", borderRadius: 12, padding: 4 }} />
             <span>
               Express Handyman<small>Dublin</small>
             </span>
@@ -74,7 +75,7 @@ export function SiteFooter() {
         <div className="footer-grid">
           <div className="footer-brand">
             <a className="brand" href="/" style={{ color: "#fff" }}>
-              <Image src="/logo.svg" alt="Express Handyman Dublin logo" width={48} height={48} />
+              <Image src="/images/logo-real.png" alt="Express Handyman Dublin logo" width={48} height={48} style={{ background: "#00162e", borderRadius: 12, padding: 4 }} />
               <span style={{ color: "#fff" }}>
                 Express Handyman<small style={{ color: "#94a3b8" }}>Dublin</small>
               </span>
@@ -96,12 +97,12 @@ export function SiteFooter() {
           <div>
             <h4>Popular Services</h4>
             <ul>
-              <li>Tiling &amp; Grouting</li>
-              <li>Architectural Carpentry &amp; Trim</li>
-              <li>Interior &amp; Exterior Painting</li>
-              <li>Plumbing Fixtures &amp; Leaks</li>
-              <li>Electrical Updates &amp; Lighting</li>
-              <li>Doors &amp; Windows</li>
+              <li>Handyman — Home Upgrades &amp; Odd Jobs</li>
+              <li>Carpentry — Floors, Doors &amp; Kitchen Units</li>
+              <li>Electrician — Lights, Sockets &amp; Showers</li>
+              <li>Plumber — Taps, Toilets &amp; Bathrooms</li>
+              <li>Painter — Inside &amp; Outside Painting</li>
+              <li>Tiler — Kitchens, Bathrooms &amp; Mosaics</li>
             </ul>
           </div>
           <div>
@@ -114,6 +115,10 @@ export function SiteFooter() {
               <li>
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">WhatsApp Julian</a>
               </li>
+              <li>
+                <a href={FACEBOOK_URL} target="_blank" rel="noreferrer">Follow on Facebook</a>
+              </li>
+              <li>Mon–Fri 8am–6pm · Weekends &amp; bank holidays: 24h emergency call-outs</li>
             </ul>
           </div>
         </div>

@@ -306,3 +306,12 @@ section { padding: 72px 0; }
   .mobile-cta .cta-call { background: var(--navy); color: #fff; }
   .mobile-cta .cta-wa { background: #25d366; color: #fff; }
 }
+
+/* Service area districts */
+.areas-districts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.area-district { text-align: left; }
+.area-district > strong { display: block; margin-bottom: 10px; color: var(--navy); font-size: 1.05rem; }
+.area-district .areas-grid { justify-content: flex-start; }
+@media (max-width: 767px) {
+  .areas-districts { grid-template-columns: 1fr; gap: 16px; }
+}

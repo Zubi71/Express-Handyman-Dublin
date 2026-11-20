@@ -11,14 +11,13 @@ import {
 } from "../../components/site-chrome";
 
 const SERVICE_OPTIONS = [
-  "Architectural Carpentry & Trim",
-  "Tiling & Grouting",
-  "Interior / Exterior Painting",
-  "Minor Plumbing & Fixture Upgrades",
-  "Lighting, Ceiling Fans & Electrical",
-  "Doors, Windows & Weatherization",
-  "Deck Repairs & Exterior Maintenance",
-  "Multiple Tasks / Full Punch List",
+  "Handyman",
+  "Carpenter",
+  "Electrician",
+  "Plumber",
+  "Painter",
+  "Tiler",
+  "Multiple Tasks",
 ];
 
 const FAQS = [
@@ -28,7 +27,7 @@ const FAQS = [
   },
   {
     q: "How quickly can you start?",
-    a: "Most routine handyman jobs and urgent punch lists can be scheduled within 48 to 72 hours of receiving your estimate approval. For sudden plumbing leaks, storm damage, or urgent security issues, we prioritize rapid dispatch within Dublin and adjacent communities.",
+    a: "Call Julian on 087 122 3254 and we will agree a time that suits you. Weekends and bank holidays are covered by 24-hour emergency call-outs.",
   },
   {
     q: "What if a project takes longer than anticipated?",
@@ -36,11 +35,11 @@ const FAQS = [
   },
   {
     q: "What areas do you serve?",
-    a: "We are based in Dublin, Ireland and serve the surrounding areas. Send us your address with the estimate request and we will confirm coverage right away.",
+    a: "My service areas are around Dublin — Dublin 2, 4, 6, 14, 16 and 18. I\u2019ll be happy to work outside of Dublin County on a large project. Send your address with the estimate request and I will confirm coverage right away.",
   },
   {
     q: "Do you work with property managers or real estate brokers?",
-    a: "Yes — we work regularly with local property managers and real estate brokers on multi-unit and commercial projects. Call the field desk to discuss scope and scheduling.",
+    a: "Yes — call Julian on 087 122 3254 to discuss scope and scheduling.",
   },
 ];
 
@@ -164,21 +163,20 @@ export default function ContactPage() {
               <div className="info-card">
                 <h3>Operating Hours</h3>
                 <p>
-                  <strong>Monday – Saturday</strong>
+                  <strong>Monday – Friday</strong>
                   <br />
-                  7:00 AM – 7:00 PM
+                  8:00 AM – 6:00 PM
                 </p>
                 <p>
-                  <strong>Sunday</strong>
+                  <strong>Saturday, Sunday &amp; Bank Holidays</strong>
                   <br />
-                  Emergency Dispatch Only
+                  24h emergency call-outs
                 </p>
               </div>
               <div className="info-card">
                 <h3>Dublin & Surrounding Areas Service Area</h3>
                 <p>
-                  Our fully equipped trade vans are actively deployed across the Dublin area every weekday. HQ:
-                  Dublin, Ireland.
+                  Based in Clondalkin, Dublin 22 — serving Dublin 2, 4, 6, 14, 16 and 18, and happy to work outside Dublin County on a large project.
                 </p>
               </div>
             </aside>

@@ -15,45 +15,39 @@ export const metadata = {
 const PILLARS = [
   {
     n: "Pillar 01",
-    title: "Punctuality & Respect",
-    desc: "Your calendar matters. We notify you when our van departs, arrive inside our guaranteed arrival slot, and treat family spaces with quiet professionalism.",
-    note: "Call or WhatsApp to book",
+    title: "Punctual & Professional",
+    desc: "I have a proven record of high-quality accomplishments and I pride myself on my professionalism. I always aim to be on time for my customers and ensure that their projects are completed to the highest possible standard.",
+    note: "On time, every time",
   },
   {
     n: "Pillar 02",
-    title: "Upfront Transparent Pricing",
-    desc: "No hidden travel fees, no phantom hourly inflations, and no invoice surprises. All tasks receive an explicit, itemized scope before tools touch walls.",
-    note: "Locked estimates prior to work",
+    title: "Honest & Dependable",
+    desc: "For me, honesty is the only policy and I strive to complete all projects with integrity and fairness, not just with my clients, but also with my suppliers and subcontractors.",
+    note: "Honesty is the only policy",
   },
   {
     n: "Pillar 03",
-    title: "True Craftsmanship",
-    desc: "We never take shortcuts behind drywall or under subfloors. Mortised joints, plumb framing, tight electrical terminations, and architectural precision.",
-    note: "Quality workmanship, every job",
-  },
-  {
-    n: "Pillar 04",
-    title: "Clean Worksite Guarantee",
-    desc: "Shoe coverings, floor runners, HEPA-filtered vacuum extraction, and meticulous debris removal ensure your home stays spotless after we depart.",
-    note: "\u201CCleaner than we found it\u201D rule",
+    title: "Passionate & Always Improving",
+    desc: "I also strive to constantly improve my work. I use the best of technology and tools to ensure that all jobs are done quickly, but also give attention to detail and ensure everything is done correctly.",
+    note: "Done quickly — and done correctly",
   },
 ];
 
 const CRAFTS = [
   {
-    title: "Finish Carpentry & Millwork",
-    desc: "Custom wainscoting, pocket door alignment, trim replication, and structural subfloor repairs throughout Dublin homes.",
-    tags: ["Cabinetry", "Door Hangs", "Historic Trim"],
+    title: "Carpentry & Joinery",
+    desc: "Floors, doors, garden sheds, decking, fences, shelves and kitchen units — for new builds and period homes alike.",
+    tags: ["Doors", "Shelves", "Kitchen Units"],
   },
   {
     title: "Electrical & Plumbing",
-    desc: "Electrical sub-panel maintenance, whole-home circuit updates, water fixture installations, tankless water heater diagnostics, and smart home lighting integrations.",
-    tags: ["Breaker Panels", "Fixture Updates", "Leak Isolation"],
+    desc: "Light fixtures, sockets, immersion heaters and electric showers — plus sinks, toilets, drains and complete bathroom refurbishments.",
+    tags: ["Light Fixtures", "Leak Repairs", "Bathrooms"],
   },
   {
-    title: "Tiling & Restoration",
-    desc: "Expert tiling, re-grouting and splashbacks, plus seamless repairs and accurate paint-matching across challenging interior spaces.",
-    tags: ["Re-grouting", "Splashbacks", "Surface Prep"],
+    title: "Tiling & Painting",
+    desc: "Kitchen and bathroom tiling, grouting repair, mosaic laying — and seamless inside and outside painting.",
+    tags: ["Wall Tiling", "Grouting", "Painting"],
   },
 ];
 
@@ -89,21 +83,21 @@ export default function AboutPage() {
         <section className="section">
           <div className="container about-split">
             <div className="about-img">
-              <Image src="/images/hero-handyman.jpg" alt="Handyman at work in a Dublin home" width={900} height={650} />
+              <Image src="/images/julian-ceiling-painting.jpg" alt="Julian painting a ceiling" width={900} height={650} />
             </div>
             <div>
               <span className="eyebrow">Our Founding Principle</span>
-              <h2>Why &apos;Express&apos;?</h2>
+              <h2>Meet Julian — Your Express Handyman</h2>
               <p>
-                Hi, my name is Julian and I&apos;m your Express Handyman! No matter your needs, I&apos;m only a phone call away and can assist you with almost any task — carpentry, plumbing, tiling, painting and more. No job too small.
+                Hi, my name is Julian and I&apos;m your Express Handyman! I can be contacted for small and large jobs whenever you need me. I have over fifteen years of experience in my field, and my goal is to always see my customers happy and satisfied with their final product.
               </p>
               <p>
-                I only offer high-quality finishes on all my jobs, and I treat every home with the same care I&apos;d bring to my own.
+                Most of my qualifications come from working hard on building sites and learning on the job, having picked up many skills from advanced plumbers, electricians and more professionals. I&apos;ll never overcharge you for a project, and I always aim to keep my prices competitive.
               </p>
               <p className="quote-line">&ldquo;No matter your needs, I&apos;m only a phone call away.&rdquo;</p>
               <ul className="check-list">
-                <li>Arrival Precision — exact 1-hour window</li>
-                <li>Pricing Clarity — written upfront</li>
+                <li>15+ years of experience</li>
+                <li>Competitive prices — never overcharged</li>
                 <li>Real reviews from happy Dublin clients</li>
               </ul>
             </div>
@@ -113,7 +107,7 @@ export default function AboutPage() {
         <section className="section alt">
           <div className="container">
             <div className="section-head">
-              <span className="eyebrow">The Four Pillars</span>
+              <span className="eyebrow">How I Work</span>
               <h2>The non-negotiable standards of our crew</h2>
               <p>Every technician dispatched to your home adheres strictly to four operational doctrines.</p>
             </div>
@@ -178,8 +172,8 @@ export default function AboutPage() {
                 <span className="stat-label">From happy Dublin homeowners</span>
               </div>
               <div className="stat">
-                <span className="stat-num">9</span>
-                <span className="stat-label">Service categories</span>
+                <span className="stat-num">6</span>
+                <span className="stat-label">Trades covered</span>
               </div>
               <div className="stat">
                 <span className="stat-num">Free</span>
